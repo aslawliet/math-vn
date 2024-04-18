@@ -86,8 +86,7 @@ if __name__ == "__main__":
     torch.cuda.set_device(local_rank)
     dist.init_process_group("nccl", rank=local_rank, world_size=world_size)
 
-    # model_name = "mistralai/Mistral-7B-v0.1"
-    model_name = "ruliad/ovm-base-m-3"
+    model_name = "mistralai/Mistral-7B-v0.1"
 
     scheduler_type = "cosine"
     seed = 877645  # set your seed
